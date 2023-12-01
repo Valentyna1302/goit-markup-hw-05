@@ -527,6 +527,9 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -545,11 +548,13 @@ img {
   border-radius: 4px;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+.backdrop.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.modal-btn {
+.modal-btn-close {
   position: absolute;
   right: 24px;
   top: 24px;
@@ -567,16 +572,10 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn-close:hover,
+.modal-btn-close:focus {
   background-color: var(--active-color);
   border: none;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .icon-close-black {
@@ -584,7 +583,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover .icon-close-black,
-.modal-btn:focus .icon-close-black {
+.modal-btn-close:hover .icon-close-black,
+.modal-btn-close:focus .icon-close-black {
   fill: #ffffff;
 }
