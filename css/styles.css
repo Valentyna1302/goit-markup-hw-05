@@ -696,12 +696,16 @@ img {
 }
 
 .review-field-wrapper {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.review-comment-wrapper {
+  margin-bottom: 16px;
 }
 
 .review-input-icon {
-  left: 16px;
   position: absolute;
+  left: 16px;
   top: 50%;
   left: 24px;
   transform: translateY(-50%);
@@ -782,7 +786,7 @@ img {
 }
 
 .review-checkbox-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .review-checkbox-btn {
