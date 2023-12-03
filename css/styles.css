@@ -518,6 +518,71 @@ img {
   fill: var(--secondary-white-color);
 }
 
+.footer-container-subscribe {
+  margin-left: auto;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-subscribe-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: #fff;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  margin-right: 24px;
+  padding: 8px 16px;
+  resize: none;
+  outline: 0px solid transparent;
+}
+.footer-input::placeholder {
+  color: #fff;
+}
+
+.footer-subscribe-btn {
+  width: 165px;
+  height: 40px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: none;
+  background: var(--secondary-accent-color);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-subscribe-btn-icon {
+  margin-left: 16px;
+  fill: #fff;
+}
+
 /**----------------MODAL-------------------*/
 
 .backdrop {
